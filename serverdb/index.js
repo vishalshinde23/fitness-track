@@ -1,16 +1,16 @@
 const express = require("express");
-const cors = require("cors");
-require("dotenv/config");
+const app = express();
 const exercisesRouter = require("./routes/exercise");
 const usersRouter = require("./routes/user");
-const database=require("./config/database")
+const database=require("./config/database");
+const cors = require("cors");
+const dotenv = require("dotenv");
 
+
+
+
+const PORT = 4000 ;
 database.connect();
-// const mongoose = require("mongoose");
-
-const app = express();
-const port = process.env.PORT || 5000;
-
 app.use(express.json());
 // app.use(cookieParser());
 app.use(
@@ -39,6 +39,6 @@ app.get("/", (req, res) => {
 	});
 });
   
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
+app.listen(4000, () => {
+  console.log(`Server is running on port: 4000`);
 });
