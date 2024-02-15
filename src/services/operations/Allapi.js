@@ -1,4 +1,4 @@
-import {toast} from "react-hot-toast"
+ import {toast} from "react-hot-toast"
 import {apiConnector} from "../apiConnector"
 import {userpoints,exercisepoint} from "../apis"
 
