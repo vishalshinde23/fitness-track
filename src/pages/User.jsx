@@ -23,7 +23,7 @@ function User() {
 
        try {
        let response= axios
-        .post("http://localhost:4000/api/user/adduserData", user)
+        .post("https://get-fitts.onrender.com/api/user/adduserData", user)
         
         console.log(response.data)
         // if (!response.data.success) {
