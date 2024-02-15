@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: "https://get-fitts.onrender.com",
 		credentials: true,
 	})
 );
