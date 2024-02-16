@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(cookieParser());
 app.use(
 	cors({
-		origin: "https://get-fitts.onrender.com",
+		origin: "https://fitness-tracki.vercel.app",
 		credentials: true,
 	})
 );
