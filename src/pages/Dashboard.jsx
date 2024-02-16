@@ -30,7 +30,7 @@ function Dashboard() {
         const getdata=async()=>{
             setLoading(true)
             let res=await getData();
-            // console.log(res.data);
+            // //console.log(res.data);
             setExercise(res.data);
             setLoading(true)
         }
@@ -40,7 +40,7 @@ function Dashboard() {
     const deleteExercise = (id) => {
       axios.delete(DELETE_API+id)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
       });
     const del = exercise.filter((el) => el._id !== id);
     setExercise(del);

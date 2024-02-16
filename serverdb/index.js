@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(
 	cors({
 		origin: "https://fitness-tracki.vercel.app",
+		// origin:"*",
 		credentials: true,
 	})
 );

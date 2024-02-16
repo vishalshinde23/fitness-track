@@ -26,7 +26,7 @@ function Exercise() {
     const handleonSubmit=async(e)=>{
       e.preventDefault();
       let res=await addExeriseData(formData);
-      console.log(res.data);
+      // //console.log(res.data);
     }
   
 

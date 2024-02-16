@@ -23,15 +23,15 @@ function User() {
 
        try {
        let response= axios
-        .post("https://get-fitts.onrender.com/api/user/adduserData", user)
+        .post("http://localhost:4000/api/user/adduserData", user)
         
-        console.log(response.data)
-        // if (!response.data.success) {
-        //   throw new Error(response.data.message)
-        // }
+        //////console.log(response.data)
+        if (!response?.data?.success) {
+          throw new Error(response.data.message)
+        }
         toast.success("your name Added Successfully")
        } catch (error) {
-        console.log("CREATE USER API ERROR............", error)
+        //////console.log("CREATE USER API ERROR............", error)
         toast.error(error.message)
        }
        
