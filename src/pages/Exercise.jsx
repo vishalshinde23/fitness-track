@@ -47,7 +47,7 @@ function Exercise() {
             xl text-white">
               Description <sup className="text-pink-200 Exo text-xl ">*</sup>
             </p>
-          <textarea name="description" value={description} onChange={handleOnChange} className='form-style w-full  p-2 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' />
+          <textarea name="description" value={description} onChange={handleOnChange} className=' resize-none form-style w-full  p-2 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' />
           </label>
           <label className=''>
             <p className="font-mono text-

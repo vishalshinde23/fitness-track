@@ -68,10 +68,11 @@ export const addExeriseData=async({username,description,duration,date})=>{
         username,description,duration,date
     })
     console.log("create user api Response...",res)
+
     if(!res?.data?.success){
         throw new Error("Could Not add Exercise userDetails");
     }
-
+    toast.success('Exercise Added SuccessFully');
 
   }catch(error){
    console.log("EXERCISE API ERROR.....",error)
